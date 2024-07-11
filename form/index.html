@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="survey-form">
+            <h1>ACQUIOS</h1>
+            <form action="/submit-survey" method="post">
+                <div class="input-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label>How was your overall experience?*</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5" title="5 stars">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4" title="4 stars">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3" title="3 stars">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2" title="2 stars">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1" title="1 star">★</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Was our representative (check all that apply):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="professional" name="qualities" value="professional">
+                        <label for="professional">Professional and courteous</label>
+                        <input type="checkbox" id="patient" name="qualities" value="patient">
+                        <label for="patient">Patient</label>
+                        <input type="checkbox" id="knowledgeable" name="qualities" value="knowledgeable">
+                        <label for="knowledgeable">Knowledgeable</label>
+                        <input type="checkbox" id="warm" name="qualities" value="warm">
+                        <label for="warm">Warm and respectful</label>
+                        <input type="checkbox" id="friendly" name="qualities" value="friendly">
+                        <label for="friendly">Friendly</label>
+                        <input type="checkbox" id="efficient" name="qualities" value="efficient">
+                        <label for="efficient">Efficient</label>
+                        <input type="checkbox" id="clear" name="qualities" value="clear">
+                        <label for="clear">Clear and direct</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <button type="submit">Submit Feedback</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
